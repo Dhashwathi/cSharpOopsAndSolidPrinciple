@@ -8,7 +8,7 @@ namespace MyConsoleApp1
 {
     public class Worker
     {
-        private int salary;
+        private int salary; // Access modifier
         public int Salary
         {
             get { return salary; }
@@ -20,7 +20,10 @@ namespace MyConsoleApp1
                 }
             }
         }
-        public string Name { get; set; }
+
+        public string WorkerName { get; set; }
+
+        // Adding Amount to Salary
         public void AddAmount(int amount)
         {
             if (amount > 0)
@@ -28,6 +31,7 @@ namespace MyConsoleApp1
                 Salary += amount;
             }
         }
+        //Deducting from Salary
         public void Deduct(int amount)
         {
             if (amount > 0 && amount <= salary)

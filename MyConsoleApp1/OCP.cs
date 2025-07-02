@@ -6,24 +6,25 @@ using System.Threading.Tasks;
 
 namespace MyConsoleApp1
 {
+    //interface
     public interface IPizza
     {
-        int GetPrice();
+        int GetPizzaPrice();
     }
     public class NormalPizza : IPizza
     {
-        public int GetPrice() => 100;
+        public int GetPizzaPrice() => 100;
     }
 
     public class SpecialPizza : IPizza
     {
-        public int GetPrice() => 150;
+        public int GetPizzaPrice() => 150;
     }
     public class PizzaBill
     {
-        public int PrintBill(IPizza pizza)
+        public int PrintPizzaBill(IPizza pizza)
         {
-            return pizza.GetPrice();
+            return pizza.GetPizzaPrice();
         }
     }
 

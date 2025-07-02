@@ -8,20 +8,23 @@ namespace MyConsoleApp1
 {
     abstract class Shape
     {
-        public abstract int Area();
+        //abtracted method
+        public abstract int AreaOfShape();
     }
     class Square : Shape
     {
-        int side;
+        int sideOfShape;
 
-        public Square(int ActualSide)
+        public Square(int ActualSideOfShape)
         {
-            side = ActualSide;
+            sideOfShape = ActualSideOfShape;
         }
-        public override int Area()
+
+        //expanding the abstract method
+        public override int AreaOfShape()
         {
             Console.Write("Area of a Square: ");
-            return (side*side);
+            return (sideOfShape*sideOfShape);
         }
     }
 }

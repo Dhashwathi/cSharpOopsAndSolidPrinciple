@@ -5,25 +5,25 @@ namespace MyConsoleApp1
     //Understanding Class and objects
     class Student
     {
-        public String name;                               //field
+        public String Studentname;                        //field
         public int rollNo;                                //field
-        public int marks = 50;                            //field
-        public void StudentActivity(String name)   // method
+        public int Totalmarks = 50;                       //field
+        public void DisplayStudentActivity(String Studentname)   // method
         {
-            Console.WriteLine(name + " is unique");
+            Console.WriteLine(Studentname + " is unique");
         }
     }
 
     // Usage of Constructors
     class Employee
     {
-        public String name;
-        public int ID;
+        public String Employeename;
+        public int EmployeeID;
         //Constructors
         public Employee(String EmpName, int EmpID)
         {
-            name = EmpName;
-            ID = EmpID;
+            Employeename = EmpName;
+            EmployeeID = EmpID;
         }
     }
 }

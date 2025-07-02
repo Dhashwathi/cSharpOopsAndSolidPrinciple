@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MyConsoleApp1
 {
-    // Class responsible for storing employee data
+    // Class responsible for storing user data
     public class User
     {
         public string Name { get; set; }
@@ -14,7 +14,7 @@ namespace MyConsoleApp1
         public decimal HourlyRate { get; set; }
     }
 
-    // Class responsible for saving employee data
+    // Class responsible for saving user data
     public class UserDataSaver
     {
         public void SaveToFile(User user)
